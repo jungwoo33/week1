@@ -1,106 +1,196 @@
+/* General settings =============================================== */
+html {
+    font-size: 100%;
+}
+
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
+/* overall body format */
 body {
     background-color: #d9dcd6;
 }
 
-.header {
-    padding: 20px;
+p {
+    font-size: 1.0rem; /*16px;*/
+}
+
+h3{
+    margin-bottom: 0.625rem; /*10px;*/
+    text-align: center;
+}
+
+.float-left {
+    float: left;
+    margin-right: 0.5625rem; /*25px;*/
+}
+
+.float-right {
+    float: right;
+    margin-left: 0.5625rem; /*25px;*/
+}
+/* End of general settings ======================================== */
+
+
+/* header ========================================================= */
+/* header box */
+header {
+    padding: 1.25rem; /*20px;*/
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
     color: #ffffff;
 }
 
-.header h1 {
+h1 {
     display: inline-block;
-    font-size: 48px;
+    font-size: 3rem; /*48px;*/
 }
-
-.header h1 .seo {
+h1 .seo {
     color: #d9dcd6;
 }
 
-.header div {
-    padding-top: 15px;
-    margin-right: 20px;
+ul{
+    padding-top: 0.9375rem; /*15px;*/
+    margin-right: 1.25rem; /*20px;*/
     float: right;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
-}
-
-.header div ul {
-    list-style-type: none;
-}
-
-.header div ul li {
+    font-size: 1.25rem; /*20px;*/
+    list-style-type: none; /* don't show dots in the list */
     display: inline-block;
-    margin-left: 25px;
 }
-
+li{
+    display: inline-block;
+    margin-left: 1.5625rem; /*25px;*/
+}
 a {
     color: #ffffff;
     text-decoration: none;
 }
+/* end of header ======================================================= */
 
-p {
-    font-size: 16px;
-}
-
-.hero {
-    height: 800px;
-    width: 100%;
-    margin-bottom: 25px;
-    background-image: url("../images/digital-marketing-meeting.jpg");
+/* Big figure in the middle */
+#hero {
+    height: 50rem;/*800px;*/
+    width: 50rem;/*100%;*/
+    margin-bottom: 1.25rem; /*1.5625rem;*//*25px;*/
+    /*background-image: url("../images/digital-marketing-meeting.jpg");*/
     background-size: cover;
     background-position: center;
 }
 
-.float-left {
-    float: left;
-    margin-right: 25px;
-}
-
-.float-right {
-    float: right;
-    margin-left: 25px;
-}
-
+/* three contents ====================================================== */
 .content {
     width: 75%;
-    display: inline-block;
-    margin-left: 20px;
+    display: inline-block; /* I will align thee contents in vertical */
+    margin-left: 1.25rem; /*20px;*/ /* 20 px from the left screen */
+    float: left;
 }
 
+/* all three contents have identical approach with 300px height with 50 px padding and figure height of 200px.
+   thus, all three figures will be located in the middle of each block.
+*/
+.search-engine-optimization {
+    margin-bottom: 1.25rem; /*20px;*/
+    padding: 3.125rem; /*50px;*/
+    height: 18.75rem; /*300px;*/
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+.search-engine-optimization img {
+    max-height: 12.5rem; /*200px;*/
+}
+.search-engine-optimization h2 {
+    margin-bottom: 1.25rem; /*20px;*/
+    font-size: 2.25rem; /*36px;*/
+}
+
+
+.online-reputation-management {
+    margin-bottom: 1.25rem; /*20px;*/
+    padding: 3.125rem; /*50px;*/
+    height: 18.75rem; /*300px;*/
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+.online-reputation-management img {
+    max-height: 12.5rem; /*200px;*/
+}
+.online-reputation-management h2 {
+    margin-bottom: 1.25rem; /*20px;*/
+    font-size: 2.25rem; /*36px;*/
+}
+
+
+.social-media-marketing {
+    margin-bottom: 1.25rem; /*20px;*/
+    padding: 3.125rem; /*50px;*/
+    height: 18.75rem; /*300px;*/
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+.social-media-marketing img {
+    max-height: 12.5rem; /*200px;*/
+}
+.social-media-marketing h2 {
+    margin-bottom: 1.25rem; /*20px;*/
+    font-size: 2.25rem; /*36px;*/
+}
+/* end of three contents =============================================== */
+
+/* Lead Generation ===================================================== */
 .benefits {
-    margin-right: 20px;
-    padding: 20px;
+    width: 20%;
+    /*height: 100%;*/
+    margin-right: 1.25rem; /*20px;*/
+    padding: 1.25rem; /*20px;*/
     clear: both;
     float: right;
-    width: 20%;
-    height: 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #2589bd;
+    
+    /* let's think about this again... */
+    position: absolute;
+    top: 57.25rem; /*56+1.25*//*57.5625rem;*//*925px;*/ /*56 + 1.5625 */
+    right: 0%;
 }
 
 .benefit-lead {
-    margin-bottom: 32px;
+    margin-bottom: 2.0rem; /*32px;*/
     color: #ffffff;
+}
+.benefit-lead img {
+    display: block;
+    margin: 0.625rem auto; /*10px auto;*/
+    max-width: 9.375rem; /*150px;*/
 }
 
 .benefit-brand {
-    margin-bottom: 32px;
+    margin-bottom: 2.0rem; /*32px;*/
     color: #ffffff;
+}
+.benefit-brand img {
+    display: block;
+    margin: 0.625rem auto; /*10px auto;*/
+    max-width: 9.375rem; /*150px;*/
 }
 
 .benefit-cost {
-    margin-bottom: 32px;
+    margin-bottom: 2.0rem; /*32px;*/
     color: #ffffff;
 }
+.benefit-cost img {
+    display: block;
+    margin: 0.625rem; /*10px auto;*/
+    max-width: 9.375rem; /*150px;*/
+}
 
+/* substitute with the general "h3" setting...
 .benefit-lead h3 {
     margin-bottom: 10px;
     text-align: center;
@@ -115,86 +205,20 @@ p {
     margin-bottom: 10px;
     text-align: center;
 }
+*/
+/* end of Lead Generation ============================================== */
 
-.benefit-lead img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
 
-.benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-cost img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.search-engine-optimization {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.search-engine-optimization img {
-    max-height: 200px;
-}
-
-.online-reputation-management img {
-    max-height: 200px;
-}
-
-.social-media-marketing img {
-    max-height: 200px;
-}
-
-.search-engine-optimization h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.social-media-marketing h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.footer {
-    padding: 30px;
+/* footer ============================================================== */
+footer {
+    padding: 1.875rem; /*30px;*/
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
 }
 
 .footer h2 {
-    font-size: 20px;
+    font-size: 1.25rem; /*20px;*/
 }
+/* end of footer ======================================================= */
+/* End of CSS ========================================================== */
