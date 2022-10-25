@@ -1,3 +1,13 @@
+# README by Jungwoo Lee
+Following the homework instructions, I have updated the given "index.html" and "styles.css". 
+What I have updated as follows:
+* The code is updated from the original non-semantic HTML approach to the new semantic HTML elements utilizing "header", "main", "section", and "footer".
+* The icons and images are now have "alt" attribute, so it is now able to accessbility to users with disbilities. 
+* The code has sequencial order, i.e., moves down from "h1" to "h3" not jump from from "h2" to "h1", i.e., reverse order. 
+* The title has now descriptive: "Website optimization techniques for search engines".
+
+!===========================================================================!
+
 # 01 HTML, CSS, and Git: Code Refactor
 
 ## Challenges in This Course
